@@ -9,7 +9,7 @@ runnig = True
 dt = 0
 
 
-agentes = [Agente(100,100) for _ in range(20)]
+agentes = [Agente(100,100) for _ in range(NUM_AGENTES)]
 resource_pos = pygame.Vector2(700,300)
 
 while runnig:
@@ -29,6 +29,6 @@ while runnig:
 
     pygame.display.flip()
 
-    dt = clock.tick(60)/1000
+    dt = clock.tick(FPS)/1000
 
 pygame.quit()
